@@ -1,0 +1,36 @@
+{
+  "name": "@zoernert/nr-gotify",
+  "version": "0.5.1",
+  "description": "NodeRED Node to send Push Messages via Gotify (self-hosted or cloud)",
+  "main": "lib.js",
+  "scripts": {
+    "test": "mocha -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoernert/nr-gotify-push.git"
+  },
+  "keywords": [
+    "pushmessage",
+    "nodered",
+    "node",
+    "push",
+    "service",
+    "gotify",
+    "selfhosted"
+  ],
+  "author": "Thorsten Zoerner <me@thorsten-zoerner.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/zoernert/nr-gotify-push/issues"
+  },
+  "homepage": "https://github.com/zoernert/nr-gotify-push#readme",
+  "dependencies": {
+    "axios": "^0.26.1"
+  },
+  "node-red": {
+    "nodes": {
+      "Gotify-Send": "send.js"
+    }
+  }
+}

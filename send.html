@@ -1,0 +1,37 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Gotify-Send',{
+        category: 'Networking',
+        color: '#3FADB5',
+        defaults: {
+            name: {value:""},
+            token: {value:"", type:"string",required:true},
+            server: {value:"https://push.tydids.com/",type:"string",required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "bridge.svg",
+        label: function() {
+            return this.name||"Gotify-Send";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="Gotify-Send">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-token"><i class="fa fa-user-o"></i> Token</label>
+        <input type="text" id="node-input-token" placeholder="(your app token)">
+    </div>
+    <div class="form-tips"><b>Tip:</b> Register at <a target="_blank" href="https://push.tydids.com/">https://push.tydids.com/</a> and add an App to your account. This will give you a token.</div>
+    <div class="form-row">
+        <label for="node-input-server"><i class="fa fa-user-o"></i> Gotify-Server</label>
+        <input type="url" id="node-input-server" placeholder="(like: https://push.tydids.com/ )">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="Gotify-Send">
+    <p>msg.payload will be send as push message</p>
+</script>
