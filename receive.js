@@ -7,7 +7,6 @@ module.exports = function(RED) {
 
         const poll = async function() {
           try {
-            console.log("Poll",config.server+"message?token="+config.token+"&limit=1");
             const responds = await axios.get(config.server+"message?token="+config.token+"&limit=1");
             let lastMsgId = storage.get("lastId");
             const msgs = responds.data.messages;
