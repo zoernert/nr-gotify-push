@@ -7,7 +7,7 @@
             token: {value:"", type:"string",required:true},
             server: {value:"https://push.tydids.com/",type:"string",required:true}
         },
-        inputs:0,
+        inputs:1,
         outputs:1,
         icon: "bridge.svg",
         label: function() {
@@ -33,5 +33,5 @@
 </script>
 
 <script type="text/html" data-help-name="Gotify-Receive">
-    <p>Will emit a msg as msg.payload</p>
+    <p>Will emit a msg as msg.payload. Re-Check of pending messages might be foreced via input node.</p>
 </script>
