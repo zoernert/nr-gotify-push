@@ -1,6 +1,6 @@
 {
   "name": "nr-gotify",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "NodeRED Node to send Push Messages via Gotify (self-hosted or cloud)",
   "main": "lib.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "keywords": [
     "pushmessage",
-    "nodered",
+    "node-red",
     "node",
     "push",
     "service",
