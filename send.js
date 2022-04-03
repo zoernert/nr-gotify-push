@@ -11,9 +11,9 @@ module.exports = function(RED) {
               message:''+msg.payload,
               priority:5
             }
-          } 
+          }
           try {
-            axios.post(config.server+"message?token=AQtxPT-z.dlIn3U",msg.payload);
+            axios.post(config.server+"message?token="+config.token,msg.payload);
           } catch(e) {console.log(e);}
         });
     }

@@ -9,7 +9,9 @@ Allows to send push mesagesages to android and web. Uses [gotify-Server](https:/
 ## Setup (on Server)
 - Register for a user account
 - Add an application
-- Use token within NodeRED Node configuration
+- Use token within NodeRED Node configuration to send messages
+- Add a client
+- Use Client Token within NodeRED Node configuration to receive messages
 
 ## Setup Phone
 - Get the latest version of the Gotify App on [Play Store](https://play.google.com/store/apps/details?id=com.github.gotify) or [F-Droid](https://f-droid.org/de/packages/com.github.gotify/)
