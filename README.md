@@ -2,9 +2,9 @@
 
 <img src="./screenshot.png" align="right" height="85px" hspace="30px" vspace="30px">
 
-**NodeRED Node to send Push Messages via Gotify (self-hosted or cloud)**
+**NodeRED Node to send Push Notifications via Gotify (self-hosted or cloud)**
 
-Allows to send push mesagesages to android, ios and web. Uses [gotify-Server](https://gotify.net/) as backend. If you do not install your own server a public gotify-server at https://push.tydids.com/ is preconfigured and might be used free of charge.
+Allows to send push mesagesages to android and web. Uses [gotify-Server](https://gotify.net/) as backend. If you do not install your own server a public gotify-server at https://push.tydids.com/ is preconfigured and might be used free of charge.
 
 ## Setup (on Server)
 - Register for a user account
