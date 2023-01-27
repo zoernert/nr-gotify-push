@@ -7,7 +7,8 @@ module.exports = function(RED) {
 
         const poll = async function() {
           try {
-            const responds = await axios.get(config.server+"message?token="+config.token+"&limit=1");
+            let url = new URL( config.server );
+            const responds = await axios.get(url.origin+"/message?token="+config.token+"&limit=1");
             let lastMsgId = storage.get("lastId");
             const msgs = responds.data.messages;
             for(let i=0;i<msgs.length;i++) {
